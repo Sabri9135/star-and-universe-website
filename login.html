@@ -10,34 +10,28 @@
             background-color: aqua;
         }
     </style>
+    <script type="text/javascript">
+            
+      function validate(){
+          var Username = document.getElementById("user");
+          var password = document.getElementById("pass");
+
+          if(Username.value=="" || password.value==""){
+              alert("no blank allowed");
+              return false;
+          }
+          else{
+            true;
+          }
+      }
+
+    </script>
 </head>
 <body style="font-size: 25px;">
-    <table align="center">
-        <tr>
-         <td>Username/Email id </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="blank">
-            </td>
-        </tr>
-        <tr>
-            <td>Password</td>
-        </tr>
-        <tr>
-            <td>
-                <input type="password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="Star Gazing.html">
-                <input type="button" value="login" style="margin: ;" ></a><br>
-                <a href="register.html">
-                <input type="button" value="register" style="margin: ;"></a>
-            </td>
-        </tr>
-
-    </table>
+    <form action="index.html.html" onsubmit="return validate()" style="text-align: center;">
+        <input id="user" placeholder="username" type="text"><br><br>
+        <input id="pass" placeholder="password" type="password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
